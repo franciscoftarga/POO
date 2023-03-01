@@ -4,9 +4,10 @@ public class Circulo {
     private int raio;
 
    public Circulo(int x, int y, int raio){
-       this.x = x;
-       this.y = y;
-       this.raio = raio;
+       this(0,0,1);
+       //this.x = x;
+       //this.y = y;
+       //this.raio = raio;
    }
 
    public Circulo(){
@@ -25,10 +26,11 @@ public class Circulo {
    }
 
    public double areaCirculo(){
-       return Math.PI*(raio*raio);
+       return Math.PI*(Math.pow(raio,2));
    }
 
    public String toString() {
-       return "Circulo de raio " + raio + " com coordenadas " + "(" + x + "," + y + ")";
+       //return "Circulo de raio " + raio + " com coordenadas " + "(" + x + "," + y + ")";
+       return String.format("Circulo de raio {0} com coordenadas ({1},{2})",x,y,raio);
    }
 }
