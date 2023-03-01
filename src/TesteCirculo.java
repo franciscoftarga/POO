@@ -13,5 +13,14 @@ public class TesteCirculo {
        System.out.println("** Realizado zoom 2x **" + "\n");
        System.out.println(Circuloteste.toString());
        System.out.println("Área atual " + Circuloteste.areaCirculo());
+
+       Circulo[] lista;
+       lista = new Circulo[2];
+       lista[0] = Circuloteste;
+       lista[1] = new Circulo(2,4,6);
+
+       for(int i = 1;i< lista.length;i++) {
+          System.out.println(lista[i].toString());
+       }
     }
 }
