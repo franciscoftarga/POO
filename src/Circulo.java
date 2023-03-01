@@ -30,7 +30,6 @@ public class Circulo {
    }
 
    public String toString() {
-       //return "Circulo de raio " + raio + " com coordenadas " + "(" + x + "," + y + ")";
-       return String.format("Circulo de raio {0} com coordenadas ({1},{2})",x,y,raio);
+       return "Circulo de raio " + raio + " com coordenadas " + "(" + x + "," + y + ")";  
    }
 }
