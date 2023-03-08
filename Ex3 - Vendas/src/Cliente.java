@@ -1,19 +1,19 @@
 //Classe utilizada para armazenar métodos relacionados ao cliente.
 public class Cliente {
     private String nome;
-    private String cpf;
+    private int cod;
 
-    //Cria um cliente através das informações de nome e CPF.
-    public Cliente(String nome, String cpf){
-        this.cpf = cpf;
+    //Cria um cliente através das informações de nome e cod.
+    public Cliente(String nome, int cod){
+        this.cod = cod;
         this.nome = nome;
     }
 
-    //Métodos Getter que obtém informações de nome e CPF
+    //Métodos Getter que obtém informações de nome e cod
     public String getNome(){
         return nome;
     }
-    public String getCpf(){
-        return cpf;
+    public int getCod(){
+        return cod;
     }
 }

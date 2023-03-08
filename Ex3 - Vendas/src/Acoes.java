@@ -7,7 +7,6 @@ public class Acoes {
     private ArrayList<Produto> produtos;
     private ArrayList<Venda> vendas;
     private ArrayList<ItemVenda> itens;
-
     private int contVendas;
 
     //Cria as listas de clientes, produtos, vendas, itens e inicializa a variável contadora de vendas.
@@ -19,9 +18,13 @@ public class Acoes {
         contVendas = 0;
     }
 
-    //Adiciona um cliente na lista de clientes.
+    //Verifica se o cliente já está cadastrado, caso na esteja, adiciona um cliente na lista de clientes
     public void cadastraCliente(Cliente cliente) {
-        clientes.add(cliente);
+        if (clientes.contains(cliente.getCod())) {
+            System.out.println("Cliente já cadastrado");
+        } else {
+            clientes.add(cliente);
+        }
     }
 
     //Adiciona um produto na lista de produtos.

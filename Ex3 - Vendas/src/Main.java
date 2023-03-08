@@ -4,9 +4,9 @@ public class Main {
         Acoes acao = new Acoes();
         acao.criarListas();
 
-        Cliente francisco = new Cliente("Francisco", "03078944018");
+        Cliente francisco = new Cliente("Francisco", 1);
         acao.cadastraCliente(francisco);
-        Cliente doralice = new Cliente("Doralice", "80852220006");
+        Cliente doralice = new Cliente("Doralice", 2);
         acao.cadastraCliente(doralice);
 
         Produto produto1 = new Produto(1, "produto1", 10);
