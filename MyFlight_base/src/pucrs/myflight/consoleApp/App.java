@@ -29,9 +29,9 @@ public class App {
 		Voo vooteste = new Voo(rotateste, datahora,duracao);
 		Voo vooteste2 = new Voo(rotateste, datahora2, duracao);
 		teste3.adicionar(vooteste);
-		teste3.listarTodos();
 		teste3.buscarData(datahora);
 
+		teste3.listarTodos();
 
 
 	}

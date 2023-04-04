@@ -15,7 +15,7 @@ public class GerenciadorVoos {
     public GerenciadorVoos(){
         voos = new ArrayList<Voo>();
     }
-    public void remover(Voo voo){
+    public void remover(Voo voo){  
         voos.remove(voo);
     }
     public void listarTodos(){
@@ -23,7 +23,7 @@ public class GerenciadorVoos {
         for(Voo v : voos){
             System.out.println(getIndexRota(v) + " - Rota: " + v.getRota().getOrigem().getNome() + "-" +
                     v.getRota().getDestino().getNome() + " - Data/Hora: " + v.getDatahora() + " - Status: "  + v.getStatus()
-                    + " - Duração : "  + v.getDuracao());
+                    + " - Duração : "  + v.getDuracao() + "\n");
         }
     }
     public int getIndexRota(Voo voo){
