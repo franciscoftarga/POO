@@ -30,8 +30,9 @@ public class App {
 		Voo vooteste2 = new Voo(rotateste, datahora2, duracao);
 		teste3.adicionar(vooteste);
 		teste3.buscarData(datahora);
-
-		teste3.listarTodos();
+		teste.adicionar(aeronaveteste);
+		//teste3.listarTodos();
+		System.out.println(teste.buscarPorCodigo("01").toString());
 
 
 	}

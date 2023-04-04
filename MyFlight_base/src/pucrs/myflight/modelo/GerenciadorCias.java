@@ -25,4 +25,24 @@ public class GerenciadorCias {
 	public int getIndexCia(CiaAerea cia){
 		return empresas.indexOf(cia);
 	}
+
+	public CiaAerea buscarPorCodigo(String cod){
+        CiaAerea ciaEncontrada = new CiaAerea();
+        for(CiaAerea a : empresas){
+            if(a.getCodigo().equals(cod)==true){
+                ciaEncontrada = a;
+            }       
+        }
+        return ciaEncontrada;
+    }   
+
+	public CiaAerea buscarPorNome(String nome){
+        CiaAerea ciaEncontrada = new CiaAerea();
+        for(CiaAerea a : empresas){
+            if(a.getCodigo().equals(nome)==true){
+                ciaEncontrada = a;
+            }       
+        }
+        return ciaEncontrada;
+    }   
 }

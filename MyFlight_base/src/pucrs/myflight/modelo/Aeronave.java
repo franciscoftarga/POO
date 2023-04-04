@@ -9,11 +9,16 @@ public class Aeronave {
 		this.descricao = descricao;
 	}
 	
+	public Aeronave(){}
+	
 	public String getCodigo() {
 		return codigo;
 	}
 	
 	public String getDescricao() {
 		return descricao;
+	}
+	public String toString(){
+		return " Código: " + codigo + " Descrição: " + descricao;
 	}
 }

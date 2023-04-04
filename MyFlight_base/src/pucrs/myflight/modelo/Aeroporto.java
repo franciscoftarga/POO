@@ -10,6 +10,8 @@ public class Aeroporto {
 		this.nome = nome;
 		this.loc = loc;
 	}
+
+	public Aeroporto(){}
 	
 	public String getCodigo() {
 		return codigo;

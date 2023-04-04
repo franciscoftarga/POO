@@ -20,4 +20,13 @@ public class GerenciadorAeroportos {
         return aeroportos.indexOf(aeroporto);
     }
 
+    public Aeroporto buscarPorCodigo(String cod){
+        Aeroporto aeroportoEncontrado = new Aeroporto();
+        for(Aeroporto a : aeroportos){
+            if(a.getCodigo().equals(cod)==true){
+                aeroportoEncontrado = a;
+            }       
+        }
+        return aeroportoEncontrado;
+    }   
 }

@@ -23,4 +23,13 @@ public class GerenciadorAeronaves {
     public int getIndexAeronave(Aeronave aeronave){
         return aeronaves.indexOf(aeronave);
     }
+    public Aeronave buscarPorCodigo(String cod){
+        Aeronave aeronaveEncontrada = new Aeronave();
+        for(Aeronave a : aeronaves){
+            if(a.getCodigo().equals(cod)==true){
+                aeronaveEncontrada = a;
+            }       
+        }
+        return aeronaveEncontrada;
+    }   
 }

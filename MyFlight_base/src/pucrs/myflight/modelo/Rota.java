@@ -12,6 +12,8 @@ public class Rota {
 		this.destino = destino;
 		this.aeronave = aeronave;		
 	}	
+
+	public Rota(){}
 	
 	public CiaAerea getCia() {
 		return cia;

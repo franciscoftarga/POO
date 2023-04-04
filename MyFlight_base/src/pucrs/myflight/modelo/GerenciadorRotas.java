@@ -23,5 +23,15 @@ public class GerenciadorRotas {
         return rotas.indexOf(rota);
     }
 
+    public Rota buscarPorOrigem(Aeroporto a){
+        Rota rotaEncontrada = new Rota();
+        for(Rota r: rotas){
+            if(r.getOrigem().equals(a)==true){
+                rotaEncontrada = r; 
+            }
+        }
+        return rotaEncontrada;
+    }
+
 
 }

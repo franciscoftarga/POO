@@ -8,6 +8,8 @@ public class CiaAerea {
 		this.codigo = codigo;
 		this.nome = nome;
 	}
+
+	public CiaAerea(){}
 	
 	public String getCodigo() {
 		return codigo;
